@@ -3,25 +3,28 @@ body {
     margin: 0;
     box-sizing: border-box;
 }
- /* Хедер */
+
+/* Хедер */
 header {
-    background: linear-gradient(0deg, rgba(55,100,238,1) 0%, rgba(89,190,246,1) 100%);
+    background: linear-gradient(0deg, rgba(55, 100, 238, 1) 0%, rgba(89, 190, 246, 1) 100%);
     color: white;
     padding-top: 30px;
 }
+
 .container {
     width: 1000px;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .cont {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
 .info {
     width: 400px;
 }
+
 .info_title {
     margin-top: 50px;
     margin-bottom: 5px;
@@ -34,6 +37,7 @@ header {
     letter-spacing: 2px;
     font-family: 'Ubuntu', sans-serif;
 }
+
 .info_main {
     width: 320px;
     font-size: 14px;
@@ -53,7 +57,7 @@ header {
     font-size: 14px;
     transition-duration: 2s;
     position: relative;
-    
+
 }
 
 /* Использование transition для кнопки */
@@ -79,8 +83,8 @@ header {
 
 /* Основная секция */
 main {
-padding-top: 40px;
-padding-bottom: 100px;
+    padding-top: 40px;
+    padding-bottom: 100px;
 }
 
 .title_h2 {
@@ -90,11 +94,11 @@ padding-bottom: 100px;
 
 .block {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
 }
 
 .item {
-    width: 270px;    
+    width: 270px;
 }
 
 /* Использование @keyframes */
@@ -104,45 +108,51 @@ padding-bottom: 100px;
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
- @keyframes animation_one {
+
+@keyframes animation_one {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
 
- }
+}
 
- .item_three {
+.item_three {
     animation-name: animation_three;
     animation-duration: 5s;
     animation-iteration-count: infinite;
     position: relative;
- }
+}
 
- @keyframes animation_three {
+@keyframes animation_three {
     0% {
-        right:0px;
+        right: 0px;
         bottom: 0px;
     }
+
     25% {
-        right:30px;
+        right: 30px;
         bottom: 0px;
     }
+
     50% {
-        right:30px;
+        right: 30px;
         bottom: 30px;
     }
+
     75% {
-        right:0px;
+        right: 0px;
         bottom: 30px;
     }
+
     100% {
-        right:0px;
+        right: 0px;
         bottom: 0px;
     }
- }
+}
 
 .item_img {
     display: block;
@@ -161,38 +171,38 @@ padding-bottom: 100px;
 
 /* Форма */
 section {
-    background-color:rgb(221, 234, 246);
+    background-color: rgb(221, 234, 246);
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
- form {
+form {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     height: 270px;
 
- }
+}
 
- input {
+input {
     width: 300px;
     height: 30px;
- }
+}
 
- button {
+button {
     width: 306px;
     height: 40px;
     font-weight: bold;
-    background-color:  rgb(235, 190, 31);
+    background-color: rgb(235, 190, 31);
     border: 0cap;
     cursor: pointer;
- }
+}
 
- /* Футер */
+/* Футер */
 
- footer {
-    background: linear-gradient(180deg, rgba(26,64,181,1) 0%, rgba(107,155,223,1) 100%);
+footer {
+    background: linear-gradient(180deg, rgba(26, 64, 181, 1) 0%, rgba(107, 155, 223, 1) 100%);
     height: 100px;
     color: white;
     display: flex;
@@ -200,3 +210,78 @@ section {
     align-items: center;
 }
 
+/*Media запросы CSS для адаптации страницы*/
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 85%;
+    }
+
+
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: 90%;
+    }
+
+    .phone {
+        width: 300px;
+    }
+
+    .block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        margin-top: 30px;
+    }
+
+    .title_h2 {
+        margin-bottom: 0;
+    }
+
+    .title_h2_2 {
+        margin-bottom: 40px;
+    }
+
+    input {
+        width: 70%;
+    }
+
+    button {
+        width: 70%;
+    }
+
+    .info {
+        width: 330px;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .cont {
+        flex-direction: column;
+
+    }
+
+    .phone:hover {
+        transform: translateX(-10px) scale(0.8, 0.8);
+    }
+
+    form {
+        height: 450px;
+    }
+
+    input {
+        height: 50px;
+    }
+
+    button {
+        height: 50px;
+    }
+}
+
+
+@media screen and (max-width: 576px) {}
