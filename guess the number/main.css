@@ -1,0 +1,65 @@
+body {
+    background: linear-gradient(93deg, rgba(86,159,209,0.9950105042016807) 0%, rgba(208,154,236,0.9894082633053222) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin: 0px;
+    
+
+}
+
+main {
+    margin-top: 100px;
+    width: 350px;
+    height: 250px;
+    background-color: white;
+    border: 2px solid #569fd1;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #2679b0;
+    
+    
+}
+
+h1 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+input {
+    width: 250px;
+    height: 40px;
+    margin-bottom: 24px;
+    font-size: 19px;
+    text-align: center;
+    background-color:#cfdfeaa0;
+    border-radius: 10px;
+}
+
+button {
+    width: 258px;
+    height: 46px;
+    margin-bottom: 24px;
+    background-color:#cfdfeaa0;
+    font-size: 19px;
+    border-radius: 10px;
+}
+
+.printtext {
+    color: red;
+    font-size: 50px;
+    text-align: center;
+}
+ .massage {
+    margin: 25px;
+ }
+
+ 

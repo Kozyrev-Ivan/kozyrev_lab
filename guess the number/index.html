@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Игра - Угадай число</title>
+</head>
+<body>
+    <main>
+        <h1> Угадай число!</h1>
+        <div>
+            <form>
+                <input type="text" id="num" placeholder="Введите число от 1 до 10">
+                <button type="button" onclick="guess_the_number()">Проверить число</button>
+            </form>
+        </div>
+    </main>
+    <section class="printtext">
+        <p id="message" class="message"></p>       
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
