@@ -53,14 +53,28 @@
         </div>
     </main>
 
+    <section class="sectionTwo">
+        <div class="container">
+            <h2 class="title_h2 title_h2_2" >Форма регистрации на сайте</h2>
+            <form action="#" method="get" class="formTwo">
+                <input type="text" name="name" id="name" placeholder="Ваше имя" required onblur="checkName()">
+                <input type="text" name="name" id="lastName" placeholder="Ваша фамилия" required onblur="checkLastName()">
+                <input type="tel" name="tel" id="tel" placeholder="Ваш номер телефона" required onblur="checkTel()">
+                <input type="email" name="email" id="mail" placeholder="Ваш E-mail" required onblur="checkMail()">
+                <input type="date" name="date" id="date" placeholder="Ваша дата рождения" required onblur="checkDate()">
+                <button >Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+
     <section>
         <div class="container">
             <h2 class="title_h2 title_h2_2" >Форма заказа обратного звонка</h2>
             <form action="#" method="get" >
-                <input type="text" name="name" placeholder="Имя">
-                <input type="text" name="email" placeholder="Введите свой E-mail">
-                <input type="tel" name="tel" placeholder="Телефон">
-                <input type="text" name="subject" placeholder="Какая тема Вас интересует?">
+                <input type="text" name="name" class="valid" placeholder="Имя" required minlength="2">
+                <input type="email" name="email" class="valid" placeholder="Введите свой E-mail" required>
+                <input type="tel" name="tel" class="valid" placeholder="Телефон" required>
+                <input type="text" name="subject" class="valid" placeholder="Какая тема Вас интересует?" required>
                 <button >Отправить вопрос!</button>
             </form>
         </div>
@@ -72,5 +86,7 @@
         </div>
     </footer>
 
+    <script src="./js/validation.js"></script>
+    <script src="./js/function.js"></script>
 </body>
 </html>

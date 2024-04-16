@@ -170,6 +170,22 @@ main {
 }
 
 /* Форма */
+
+/* Форма для регистрации на сайте */
+.sectionTwo {
+    background-color: rgb(159, 206, 249);
+}
+
+.formTwo {
+    height: 310px;
+}
+
+
+
+
+
+
+/* Форма заказа обратного звонка */
 section {
     background-color: rgb(221, 234, 246);
     padding-top: 50px;
@@ -285,3 +301,14 @@ footer {
 
 
 @media screen and (max-width: 576px) {}
+
+/* Валидация первой формы с помощью встроенных средст HTML5 */
+.valid:invalid:required {
+    border-color: red;
+}
+
+
+
+input {outline:none;}
+
+
